@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Button Example</title>
+    <style>
+        #message {
+            margin-top: 20px;
+            font-size: 24px;
+            display: none; /* Hide message initially */
+        }
+    </style>
+</head>
+<body>
+    <button id="myButton">Click me</button>
+    <div id="message">yo</div>
+
+    <script>
+        document.getElementById('myButton').addEventListener('click', function() {
+            document.getElementById('message').style.display = 'block';
+        });
+    </script>
+</body>
+</html>
